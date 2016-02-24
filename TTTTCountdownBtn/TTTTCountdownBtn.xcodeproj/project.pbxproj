@@ -15,6 +15,7 @@
 		A50D8C3B1C7D9E780048F57F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50D8C391C7D9E780048F57F /* LaunchScreen.storyboard */; };
 		A50D8C461C7D9E780048F57F /* TTTTCountdownBtnTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A50D8C451C7D9E780048F57F /* TTTTCountdownBtnTests.m */; };
 		A50D8C511C7D9E780048F57F /* TTTTCountdownBtnUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A50D8C501C7D9E780048F57F /* TTTTCountdownBtnUITests.m */; };
+		A59000C41C7DA6F8008FE7F4 /* UIButton+countDown.m in Sources */ = {isa = PBXBuildFile; fileRef = A59000C31C7DA6F8008FE7F4 /* UIButton+countDown.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		A50D8C4C1C7D9E780048F57F /* TTTTCountdownBtnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTTTCountdownBtnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A50D8C501C7D9E780048F57F /* TTTTCountdownBtnUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTTCountdownBtnUITests.m; sourceTree = "<group>"; };
 		A50D8C521C7D9E780048F57F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59000C21C7DA6F8008FE7F4 /* UIButton+countDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+countDown.h"; sourceTree = "<group>"; };
+		A59000C31C7DA6F8008FE7F4 /* UIButton+countDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+countDown.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		A50D8C2A1C7D9E780048F57F /* TTTTCountdownBtn */ = {
 			isa = PBXGroup;
 			children = (
+				A59000BE1C7DA57C008FE7F4 /* UIButton+Category */,
 				A50D8C2E1C7D9E780048F57F /* AppDelegate.h */,
 				A50D8C2F1C7D9E780048F57F /* AppDelegate.m */,
 				A50D8C311C7D9E780048F57F /* ViewController.h */,
@@ -138,6 +142,15 @@
 				A50D8C521C7D9E780048F57F /* Info.plist */,
 			);
 			path = TTTTCountdownBtnUITests;
+			sourceTree = "<group>";
+		};
+		A59000BE1C7DA57C008FE7F4 /* UIButton+Category */ = {
+			isa = PBXGroup;
+			children = (
+				A59000C21C7DA6F8008FE7F4 /* UIButton+countDown.h */,
+				A59000C31C7DA6F8008FE7F4 /* UIButton+countDown.m */,
+			);
+			name = "UIButton+Category";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A50D8C331C7D9E780048F57F /* ViewController.m in Sources */,
+				A59000C41C7DA6F8008FE7F4 /* UIButton+countDown.m in Sources */,
 				A50D8C301C7D9E780048F57F /* AppDelegate.m in Sources */,
 				A50D8C2D1C7D9E780048F57F /* main.m in Sources */,
 			);
@@ -415,6 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TTTTCountdownBtn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TTL.TTTTCountdownBtn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TTTTCountdownBtn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TTL.TTTTCountdownBtn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -499,6 +515,7 @@
 				A50D8C571C7D9E780048F57F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A50D8C581C7D9E780048F57F /* Build configuration list for PBXNativeTarget "TTTTCountdownBtnTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +524,7 @@
 				A50D8C5A1C7D9E780048F57F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A50D8C5B1C7D9E780048F57F /* Build configuration list for PBXNativeTarget "TTTTCountdownBtnUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +533,7 @@
 				A50D8C5D1C7D9E780048F57F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
